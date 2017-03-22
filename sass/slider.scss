@@ -1,0 +1,51 @@
+.slider {
+	position: relative;
+	height: 460px;
+	margin-bottom: 45px;
+
+	.slider_text {
+		position: absolute;
+		top: 270px;
+		width: 864px;
+		height: 140px;
+		padding: 30px;
+		padding-top: 35px;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+
+		h2 {
+			width: 450px;
+			font-size: $fs22;
+			line-height: 24px;
+			margin-bottom: 14px;
+		}
+
+		span {
+			font-size: $fs14;
+			line-height: 24px;
+		}
+	}
+
+	.bullets {
+
+		ul {
+			position: absolute;
+			top: 427px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			li {
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border: 2px solid #fff;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+		}
+
+		.active_bullet {
+			background-color: #fff;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.search_bar {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #fff;
+	font-size: $fs14;
+
+	.breadcrumbs {
+		margin-left: 0;
+	}
+
+	h2 {
+		margin-bottom: 25px;
+	}
+
+	.search {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 100px;
+
+		form {
+
+			input {
+				position: absolute;
+				width: 100%;
+				border: 1px solid #e2e2e2;
+			}
+		}
+	}
+
+	span {
+	}
+}

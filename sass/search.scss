@@ -1,0 +1,29 @@
+.search {
+	position: relative;
+	margin-bottom: 20px;
+
+	form {
+
+		input {
+			width: 360px;
+			padding-left: 16px;
+			border: none;
+			line-height: 50px;
+			outline: none;
+		}
+
+		button {
+			position: absolute;
+			top: 1px;
+			right: 0;
+			width: 40px;
+			height: 51px;
+			border: none;
+			background-color: #fff;
+			background-image: url('../img/search_button.png');
+			background-position: 12px 19px;
+			cursor: pointer;
+			outline: none;
+		}
+	}
+}
