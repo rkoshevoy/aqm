@@ -210,14 +210,6 @@ button {
 	min-height: calc(100vh - 255px);
 }
 
-.content {
-	float: left;
-	display: inline-block;
-	width: 67.5%;
-	max-width: 864px;
-	vertical-align: top;
-}
-
 .sidebar {
 	float: right;
 	display: inline-block;
@@ -240,6 +232,7 @@ button {
 	margin-left: 20px;
 
 	ul {
+			margin-bottom: 20px;
 
 		li {
 			position: relative;

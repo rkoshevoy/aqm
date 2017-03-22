@@ -7,7 +7,6 @@
 		display: inline-block;
 		width: 49%;
 		max-width: 422px;	
-		min-height: 440px;
 		margin-bottom: 20px;	
 
 		@media (max-width: 1000px) {
@@ -30,6 +29,12 @@
 
 			@media (max-width: 1000px) {
 				min-height: 100px;
+			}
+
+			.news_header {
+				text-decoration: none;
+				margin-top: 0;
+				padding-bottom: 0;
 			}
 
 			h3 {

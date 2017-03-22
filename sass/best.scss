@@ -2,6 +2,10 @@
 	min-height: 423px; 
 	margin-bottom: 20px;
 
+	@media (max-width: 1000px) {
+		display: none;
+	}
+
 	h4 {
 		padding-left: 20px;
 		line-height: 67px;

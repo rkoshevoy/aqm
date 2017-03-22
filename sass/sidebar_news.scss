@@ -1,6 +1,10 @@
 .sidebar_news {
 	margin-bottom: 20px;
 
+	@media (max-width: 1000px) {
+		display: none;
+	}
+
 	.switch {
 		background-color: #f3f3f3;
 

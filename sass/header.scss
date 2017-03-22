@@ -11,10 +11,14 @@
 		margin-top: 25px;
 		color: #fff;
 		background-image: url('../img/logo.png');
-		background-position: 30px -5px;
+		background-position: 30px 0px;
 
 		@media (max-width: 1000px) {
 			display: none;
+		}
+
+		@media (min-width: 1600px) {
+			background-position: 2vw 0.2vw;
 		}
 
 		h1 {
@@ -102,19 +106,24 @@
 		}
 
 		.menu_text {
-			position: absolute;
-			top: 10px;
-			right: 30px;
-			width: 180px;
-			color: #fff;
-			text-align: right;
+			display: none;
 
-			h1 {
-				font-size: $fs36;
-			}
+			@media (max-width: 1000px) {
+				display: block;
+				position: absolute;
+				top: 10px;
+				right: 30px;
+				width: 180px;
+				color: #fff;
+				text-align: right;
 
-			span {
-				font-size: $fs14;
+				h1 {
+					font-size: $fs36;
+				}
+
+				span {
+					font-size: $fs14;
+				}
 			}
 		}
 
@@ -122,7 +131,6 @@
 			display: inline-block;
 
 			@media (max-width: 1000px) {
-				/* display: none; */
 				position: absolute;
 				z-index: 10;
 				top: 0;
@@ -152,6 +160,32 @@
 					padding-right: 3vw;
 				}
 
+				.menu_active {
+					padding-top: 31px;
+					border-top: 14px solid #efb607;
+
+					@media (min-width: 1600px) {
+						padding-top: 2.3vw;
+						padding-bottom: 3vw;
+						margin-top: 0;
+						border-top: 0.5vw solid #efb607;
+						font-size: 1vw;
+					}
+				}
+
+				.menu_active_black {
+					padding-top: 31px;
+					border-top: 14px solid #000;
+
+					@media (min-width: 1600px) {
+						padding-top: 2.3vw;
+						padding-bottom: 3vw;
+						margin-top: 0;
+						border-top: 0.5vw solid #000;
+						font-size: 1vw;
+					}
+				}
+
 				li {
 					padding: 0 1vw;
 					padding-top: 45px;
@@ -177,17 +211,10 @@
 						margin-top: 0;
 						font-size: 1vw;
 
-						&:hover {
-							padding-top: 2vw;
-							border-top: 0.5vw solid #efb607;
-						}
 					}
 
 					&:hover {
 						cursor: pointer;
-						padding-top: 31px;
-						border-top: 14px solid #efb607;
-						font-family: 'Didact Gothic';
 						font-weight: bold;
 
 						@media (max-width: 1000px) {
@@ -271,21 +298,28 @@
 
 			ul {
 
+
 				li {
 
 					&:hover {
-						border-top: 14px solid #000;
 
 						a {
 							border-bottom: 1px dashed #000;
 						}
 					}
 
-					@media (min-width: 1600px) {
+					@media (max-width: 1000px) {
 
 						&:hover {
-							border-top: 0.5vw solid #000;
+
+							a {
+								color: #fff;
+							}
 						}
+					}
+
+					@media (min-width: 1600px) {
+
 					}
 
 					a {

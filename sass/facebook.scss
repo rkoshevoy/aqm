@@ -1,4 +1,9 @@
 .facebook {
+
+	@media (max-width: 1000px) {
+		display: none;
+	}
+
 	img {
 		width: 100%;
 	}

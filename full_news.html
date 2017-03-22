@@ -21,10 +21,12 @@
 		<div class="figure3"></div>
 
 		<header class="header clearfix">
-			<div class="logo logo_black">
-				<h1>AQM</h1>
-				<span>Компания №1 в монтаже систем автополива</span>
-			</div>
+			<a href="index.html">
+				<div class="logo logo_black">
+					<h1>AQM</h1>
+					<span>Компания №1 в монтаже систем автополива</span>
+				</div>
+			</a>
 
 			<div class="header_right">
 				<div class="show_menu">
@@ -32,18 +34,22 @@
 					<div class="menu_line"></div>
 					<div class="menu_line"></div>
 				</div>
-				<nav class="">
+				<nav class="hide">
 					<div class="hide_menu"></div>
+					<div class="menu_text">
+						<h1>AQM</h1>
+						<span>Компания №1 в монтаже систем автополива</span>
+					</div>
 					<ul class="menu_inline">
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="gallery.html">Объекты</a></li>
 						<li><a href="reviews.html">Отзывы</a></li>
-						<li><a href="blog.html">Блог</a></li>
+						<li class="menu_active_black"><a href="blog.html">Блог</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="header_phone">
-					<a href="tel:+380508447776" class="phone">+3805084 47776</a>
+					<a href="tel:+380508447776" class="phone">+380508447776</a>
 					<a href="#" class="text">Получить консультацию</a>
 				</div>
 			</div>
@@ -61,9 +67,24 @@
 						<li><a href="#">Категория 1</a></li>
 					</ul>
 				</nav>
+
+				<select>
+					<option value="Сад">Сад</option>
+					<option value="Дизайн сада">Дизайн Сада</option>
+					<option value="Идеи для сада">Идеи для сада</option>
+					<option value="Растения">Растения</option>
+					<option value="Газон">Газон</option>
+				</select>
 			</div>
 
 			<div class="content">
+				<div class="search block">
+					<form action="#">
+						<input type="text">
+						<input type="submit" value="">
+					</form>
+				</div>
+
 				<div class="full_news block_full_news">
 					<nav class="breadcrumbs menu_inline">
 						<ul>
@@ -123,18 +144,19 @@
 					<div class="recommend_news_all">
 						<div class="recommend_news">
 							<img src="img/sprite_small.jpg" alt="sprite">
-							<h5>История автополива с древнего рима и до наших дней</h5>
+							<a href="full_news.html" class="news_header"><h5>История автополива с древнего рима и до наших дней</h5></a>
 						</div>
 						<div class="recommend_news">
 							<img src="img/sprite_small.jpg" alt="sprite">
-							<h5>История автополива с древнего рима и до наших дней</h5>
+							<a href="full_news.html" class="news_header"><h5>История автополива с древнего рима и до наших дней</h5></a>
 						</div>
 						<div class="recommend_news">
 							<img src="img/sprite_small.jpg" alt="sprite">
-							<h5>История автополива с древнего рима и до наших дней</h5>
+							<a href="full_news.html" class="news_header"><h5>История автополива с древнего рима и до наших дней</h5></a>
 						</div>
 					</div>
 				</div>
+
 
 				<div class="disqus block_full_news">
 					<img src="img/disqus.png" alt="disqus">
@@ -159,27 +181,27 @@
 					<div class="fresh_news">
 						<div class="one_news">
 							<img src="img/sprite_micro.jpg" alt="sprite">
-							<h3>История автополива с древнего рима и до наших дней</h3>
+							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
 							<span>Категория</span>
 						</div>
 						<div class="one_news">
 							<img src="img/sprite_micro.jpg" alt="sprite">
-							<h3>История автополива с древнего рима и до наших дней</h3>
+							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
 							<span>Категория</span>
 						</div>
 						<div class="one_news">
 							<img src="img/sprite_micro.jpg" alt="sprite">
-							<h3>История автополива с древнего рима и до наших дней</h3>
+							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
 							<span>Категория</span>
 						</div>
 						<div class="one_news">
 							<img src="img/sprite_micro.jpg" alt="sprite">
-							<h3>История автополива с древнего рима и до наших дней</h3>
+							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
 							<span>Категория</span>
 						</div>
 						<div class="one_news">
 							<img src="img/sprite_micro.jpg" alt="sprite">
-							<h3>История автополива с древнего рима и до наших дней</h3>
+							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
 							<span>Категория</span>
 						</div>
 					</div>
@@ -231,7 +253,6 @@
 				<div class="facebook block">
 					<img src="img/facebook.jpg" alt="facebook">
 				</div>
-
 			</div>
 		</div>
 
