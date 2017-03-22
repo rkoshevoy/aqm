@@ -296,9 +296,10 @@ button {
     left: 50%;
     width: 900px;
     height: 400px;
-    padding: 0 30px;
     padding-top: 90px;
+    padding-right: 40px;
     padding-bottom: 55px;
+    padding-left: 30px;
     background-color: #fff;
     transform: translate(-50%, -50%); }
     .consult_modal .modal_wrapper h1 {
@@ -310,6 +311,36 @@ button {
       font-weight: bold; }
     .consult_modal .modal_wrapper span {
       color: #666666; }
+    .consult_modal .modal_wrapper form input[type=text] {
+      position: absolute;
+      width: 394px;
+      height: 52px;
+      padding-left: 124px;
+      border: 1px solid #e3e3e3;
+      outline: none; }
+      .consult_modal .modal_wrapper form input[type=text]:before {
+        content: '';
+        position: absolute;
+        left: 100px;
+        width: 1px;
+        height: 26px;
+        background-color: #cccccc;
+        border: 10px solid red; }
+      .consult_modal .modal_wrapper form input[type=text]:nth-of-type(1) {
+        top: 90px;
+        right: 40px; }
+      .consult_modal .modal_wrapper form input[type=text]:nth-of-type(2) {
+        top: 160px;
+        right: 40px; }
+    .consult_modal .modal_wrapper form input[type=submit] {
+      position: absolute;
+      left: 50%;
+      bottom: 54px;
+      width: 244px;
+      height: 52px;
+      border: 2px solid #000;
+      background-color: transparent;
+      transform: translatex(-50%); }
 
 .footer {
   width: 100%;
