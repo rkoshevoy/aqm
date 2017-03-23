@@ -5,6 +5,10 @@
 	padding-bottom: 20px;
 	margin: 0 auto;
 
+	@media (min-width: 1600px) {
+		height: 6vw;
+	}
+
 	.social {
 		float: left;
 		margin-top: 30px;
@@ -14,6 +18,10 @@
 			width: 100%;
 			margin-bottom: 10px;
 			text-align: center;
+		}
+
+		@media (min-width: 1600px) {
+			margin-top: 2.1vw;
 		}
 
 		.social_sprite {
@@ -27,6 +35,8 @@
 			@media (min-width: 1600px) {
 				width: 2vw;
 				height: 2vw;
+				background-size: 8.45vw 1.1vw;
+				border-width: 0.2vw;
 			}
 
 			&:hover {
@@ -45,18 +55,34 @@
 
 		.fb {
 			background-position: 9px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: 0.6vw 0.35vw;
+			}
 		}
 
 		.inst {
 			background-position: -33px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: -2vw 0.4vw;
+			}
 		}
 
 		.tw {
 			background-position: -73px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: -4.5vw 0.4vw;
+			}
 		}
 
 		.vk {
 			background-position: -112px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: -7vw 0.4vw;
+			}
 		}
 	}
 
@@ -76,6 +102,7 @@
 
 		@media (min-width: 1600px) {
 			width: 18vw;
+			margin-top: 1vw;
 		}
 
 		span {

@@ -6,16 +6,17 @@
 
 	@media (max-width: 1000px) {
 		width: 100%;
+		min-width: 0;
 	}
- 
+
 	h2 {
 		margin-bottom: 40px;
 		font-size: $fs30;
 		text-transform: uppercase;
 
 		@media (min-width: 1600px) {
-				font-size: 1.85vw;
-			}
+			font-size: 1.85vw;
+		}
 	}
 
 	form {
@@ -44,6 +45,14 @@
 			font-size: $fs14;
 			outline: none;
 
+			&[type=submit] {
+				border: 1px solid #2d2e30;
+
+				@media (max-width: 1000px) {
+					width: 100%;
+				}
+			}
+
 			@media (min-width: 1600px) {
 				padding: 1.5vw;
 				font-size: 0.9vw;
@@ -71,8 +80,8 @@
 				color: #333333;
 
 				@media (min-width: 1600px) {
-				font-size: 0.9vw;
-			}
+					font-size: 0.9vw;
+				}
 			}
 		}
 

@@ -37,12 +37,17 @@ body {
 	.figure2 {
 		position: absolute;
 		z-index: -1;
-		top: -6px;
-		right: -240px;
-		width: 1000px;
-		height: 147px;
+		right: -80px;
+		width: 280px;
+		height: 140px;
 		background-color: #efb607;
-		transform: skew(45deg) translateX(540px);
+		transform: skew(45deg); 
+
+		@media (min-width: 1600px) {
+			right: -5.5vw;
+			width: 17.4vw;
+			height: 8.7vw;
+		}
 	}  
 
 	.figure3 {
@@ -90,12 +95,17 @@ body {
 	.figure7 {
 		position: absolute;
 		z-index: 1;
-		top: -6px;
-		right: -1300px;
-		width: 1000px;
-		height: 1147px;
+		right: -135px;
+		width: 270px;
+		height: 270px;
 		background-color: #efb607;
 		transform: skew(45deg);
+
+		@media (min-width: 1600px) {
+			right: -13vw;
+			width: 20vw;
+			height: 20vw;
+		}
 	}
 
 	.figure8 {
@@ -116,6 +126,24 @@ body {
 		height: 1147px;
 		background-color: #efb607;
 		transform: rotate(45deg) translatey(100%);
+	}
+
+	.figure10 {
+		position: absolute;
+		z-index: -1;
+		left: -4%;
+		width: 2000px;
+		height: 2000px;
+		background-color: #efb607;
+		transform: rotate(45deg);
+
+		@media (max-width: 1000px) {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			transform: none;
+		}
 	}
 } 
 

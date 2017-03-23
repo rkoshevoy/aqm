@@ -4,13 +4,12 @@
 
 	@media (max-width: 1000px) {
 		padding-left: 0;
+		text-align: center;
 	}
 
 	.screen_slider {
 		position: relative;
 		margin-left: 10px;
-
-
 
 		.screen_slider_points {
 			position: absolute;
@@ -59,7 +58,9 @@
 			margin-left: 3%;
 
 			@media (max-width: 1000px) {
-				width: 100%;
+				width: 95%;
+				margin: 0 auto;
+				padding-bottom: 0;
 			}
 
 			.slide {
@@ -74,10 +75,6 @@
 					width: 2px;
 					background-color: #fff;
 
-					@media (max-width: 1000px) {
-						left: 22%;
-					}
-
 					&::before {
 						content: 'до';
 						position: absolute;
@@ -87,6 +84,10 @@
 						height: 30px;
 						background-color: #fff;
 						text-align: center;
+
+						@media (max-width: 1000px) {
+							display: none;
+						}
 					}
 
 					&::after {
@@ -97,17 +98,18 @@
 						height: 30px;
 						background-color: #fff;
 						text-align: center;
+
+						@media (max-width: 1000px) {
+							display: none;
+						}
 					}
 				}
 
 				img {
 					width: 100%;
-
-					@media (max-width: 1000px) {
-						width: 93%;
-					}
 				}
 			}
+
 			.previews {
 
 				.slide_preview {
@@ -152,6 +154,14 @@
 			color: #333333;
 			overflow: hidden;
 
+			@media (max-width: 1000px) {
+				float: none;
+				width: 95%;
+				height: auto;
+				margin: 0 auto;
+				border: 1px solid #efb607;
+			}
+
 			@media (min-width: 1600px) {
 				height: 40vw;
 				padding: 1.5vw;
@@ -166,6 +176,10 @@
 				height: 330px;
 				width: 1px;
 				background-color: #efb607;
+
+				@media (max-width: 1000px) {
+					display: none;
+				}
 			}
 
 			h2 {
@@ -181,12 +195,20 @@
 
 			ul {
 
+				@media (max-width: 1000px) {
+					margin-bottom: 70px;
+				}
+
 				li {
 					position: relative;
 					padding-left: 20px;
 					margin-bottom: 10px;
 					line-height: 25px;
 					font-size: $fs14;
+
+					@media (max-width: 1000px) {
+						text-align: left;
+					}
 
 					@media (min-width: 1600px) {
 						 margin-bottom: 0.6vw; 
@@ -223,6 +245,13 @@
 				background-color: #fff;
 				font-family: 'Didact Gothic';
 				font-weight: bold;
+
+				@media (max-width: 1000px) {
+					position: relative;
+					width: 100%;
+					max-width: none;
+					margin: 0 25px;
+				}
 
 				@media (min-width: 1600px) {
 					right: 1.6vw;

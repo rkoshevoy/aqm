@@ -5,6 +5,7 @@
 	margin-bottom: 50px;
 
 	@media (min-width: 1600px) {
+		padding-top: 6.5vw;
 		margin-bottom: 3vw;
 	}
 
@@ -21,6 +22,7 @@
 		@media (min-width: 1600px) {
 			width: 65%;
 			max-width: 4000px;
+			margin-bottom: 5vw;
 			font-size: 3vw;
 			line-height: 4.2vw;
 		}
@@ -37,7 +39,8 @@
 		background-color: #efb607;
 
 		@media (min-width: 1600px) {
-			padding: 1.5vw 2.5vw;
+			padding: 1.5vw 2.8vw;
+			margin-bottom: 5vw;
 			font-size: 1.1vw;
 		}
 	}
