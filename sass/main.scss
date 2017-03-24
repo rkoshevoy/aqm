@@ -111,31 +111,21 @@ body {
 	.figure8 {
 		position: absolute;
 		z-index: 0;
-		top: 400px;
-		left: -1500px;
-		width: 2000px;
-		height: 2000px;
+		left: -4500px;
+		width: 4000px;
+		height: 4000px;
 		background-color: #232323;
-		transform: rotate(45deg);
-
-		@media (min-width: 1600px) {
-			top: 30vw;
-		}
+		transform: rotate(45deg) translatey(-20%);
 	}
 
 	.figure9 {
 		position: absolute;
 		z-index: 0;
-		top: 900px;
-		right: -900px;
+		right: -1850px;
 		width: 1000px;
-		height: 1000px;
+		height: 1147px;
 		background-color: #efb607;
-		transform: rotate(45deg);
-
-		@media (min-width: 1600px) {
-			top: 61.5vw;
-		}
+		transform: rotate(45deg) translatey(100%);
 	}
 
 	.figure10 {
@@ -221,6 +211,7 @@ button {
 	max-width: 1324px;
 	padding: 0 20px;
 	margin: 0 auto;
+	min-height: calc(100vh - 265px);
 }
 
 .wrapper_about {
@@ -231,17 +222,20 @@ button {
 .wrapper_main {
 	width: 100%;
 	margin: 0 auto;
+	min-height: calc(100vh - 265px);
 }
 
 .wrapper_wide {
 	padding: 0 30px;
 	margin: 0 auto;
+	min-height: calc(100vh - 255px);
 }
 
 .wrapper_services {
 	max-width: 1248px;
 	padding: 0 20px;
 	margin: 0 auto;
+	min-height: calc(100vh - 255px);
 }
 
 .sidebar {

@@ -18,22 +18,14 @@
 			color: #666666;
 			text-align: center;
 			line-height: 40px;
-
-			@media (max-width: 1000px) {
-				margin-bottom: 10px;
-			}
 		}
 
 		.page_arrow {
 			width: 80px;
-
-			@media (max-width: 1000px) {
-				width: 100%;
-			}
 		}
 
 		.active {
 			background-color: #efb607;
 		}
 	}
-} 
+}

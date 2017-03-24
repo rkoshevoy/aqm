@@ -8,12 +8,6 @@
 		font-size: $fs30;
 		color: #fff;
 		text-align: center;
-
-		@media (min-width: 1600px) {
-			font-size: 1.88vw;
-			margin-top: 1vw;
-			margin-bottom: 5.1vw;
-		}
 	}
 
 	.video {
@@ -25,10 +19,6 @@
 
 		@media (max-width: 1000px) {
 			width: 100%;
-		}
-
-		@media (min-width: 1600px) {
-			margin-bottom: 3.5vw;
 		}
 
 		&:nth-of-type(3n) {

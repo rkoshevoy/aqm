@@ -3,10 +3,13 @@
 	margin-bottom: 45px;
 
 	@media (max-width: 1000px) {
+		padding-bottom: 135px;
+	}
+
+	@media (max-width: 1000px) {
 
 		img {
 			width: 100%;  
-			margin-bottom: -5px;
 		}
 	}
 
@@ -21,7 +24,6 @@
 		color: #fff;
 
 		@media (max-width: 1000px) {
-			position: relative;
 			bottom: 0;
 			background-color: rgba(0, 0, 0, 0.9);
 		}
@@ -44,10 +46,6 @@
 	}
 
 	.bullets {
-
-		@media (max-width: 1000px) {
-			display: none;
-		}
 
 		ul {
 			position: absolute;
@@ -73,4 +71,4 @@
 			background-color: #fff;
 		}
 	}
-} 
+}

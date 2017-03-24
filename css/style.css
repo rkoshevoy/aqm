@@ -85,21 +85,19 @@ body {
   .figure_wrapper .figure8 {
     position: absolute;
     z-index: 0;
-    top: 400px;
-    left: -1500px;
-    width: 2000px;
-    height: 2000px;
+    left: -4500px;
+    width: 4000px;
+    height: 4000px;
     background-color: #232323;
-    transform: rotate(45deg); }
+    transform: rotate(45deg) translatey(-20%); }
   .figure_wrapper .figure9 {
     position: absolute;
     z-index: 0;
-    top: 900px;
-    right: -900px;
+    right: -1850px;
     width: 1000px;
-    height: 1000px;
+    height: 1147px;
     background-color: #efb607;
-    transform: rotate(45deg); }
+    transform: rotate(45deg) translatey(100%); }
   .figure_wrapper .figure10 {
     position: absolute;
     z-index: -1;
@@ -156,7 +154,8 @@ button {
   width: 100%;
   max-width: 1324px;
   padding: 0 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: calc(100vh - 265px); }
 
 .wrapper_about {
   max-width: 1200px;
@@ -164,16 +163,19 @@ button {
 
 .wrapper_main {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: calc(100vh - 265px); }
 
 .wrapper_wide {
   padding: 0 30px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: calc(100vh - 255px); }
 
 .wrapper_services {
   max-width: 1248px;
   padding: 0 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: calc(100vh - 255px); }
 
 .sidebar {
   float: right;
@@ -1218,7 +1220,6 @@ button {
       padding: 20px;
       line-height: 22px; }
       .news_all .news .news_text .news_header {
-        float: none;
         text-decoration: none;
         margin-top: 0;
         padding-bottom: 0; }
@@ -1582,10 +1583,6 @@ button {
     right: -13vw;
     width: 20vw;
     height: 20vw; }
-  .figure_wrapper .figure8{
-    top: 30vw; }
-  .figure_wrapper .figure9{
-    top: 61.5vw; }
   .header .logo{
     margin-top: 1.5vw;
     background-position: 2vw 0.2vw; }
@@ -1597,6 +1594,8 @@ button {
     background-size: 5.75vw; }
   .header .logo span{
     font-size: 0.85vw; }
+  .header .header_right nav{
+    margin-top: -8px; }
   .header .header_right nav ul{
     padding-right: 3vw; }
   .header .header_right nav ul .menu_active{
@@ -1706,22 +1705,12 @@ button {
     max-width: 10000px;
     height: 3.3vw;
     font-size: 0.84vw; }
-  .reviews h2{
-    font-size: 1.88vw;
-    margin-top: 1vw;
-    margin-bottom: 5.1vw; }
-  .reviews .video{
-    margin-bottom: 3.5vw; }
   .contact h2{
-    margin-bottom: 2.5vw;
     font-size: 1.85vw; }
   .contact form label{
     font-size: 0.9vw;
     line-height: 2vw; }
-  .contact form input[type=submit]{
-    margin-top: 1vw; }
   .contact form input{
-    margin-bottom: 1vw;
     padding: 1.5vw;
     font-size: 0.9vw; }
   .contact form textarea{
@@ -1741,20 +1730,11 @@ button {
   .address{
     width: 24.5vw;
     height: 24vw;
-    margin-top: 5vw;
-    padding: 2vw 1.5vw;
     font-size: 1.1vw; }
   .address .address_element{
     padding-left: 4.5vw;
     margin-bottom: 2.6vw;
-    height: 2.7vw;
-    background-size: 2.6vw 18.5vw; }
-  .address .timetable{
-    background-position: 0 -5.2vw; }
-  .address .email{
-    background-position: 0 -10.4vw; }
-  .address .phone{
-    background-position: 0 -16vw; } }
+    height: 2.7vw; } }
       @media (max-width: 1000px){
   .figure_wrapper .figure10{
     width: 100%;
@@ -1766,7 +1746,6 @@ button {
     display: none; }
   .header .header_right .show_menu{
     position: absolute;
-    z-index: 10;
     left: 40px;
     top: 40px;
     width: 40px;
@@ -1971,9 +1950,7 @@ button {
   .request form input[type="text"]{
     width: 100%; }
   .request form .button{
-    width: 100%;
-    min-width: 0;
-    margin-bottom: 50px; }
+    width: 100%; }
   .map h2{
     width: 100%; }
   .bottom_menu ul{
@@ -1992,17 +1969,15 @@ button {
     max-width: none; }
   .search_mobile{
     display: block; }
+  .slider{
+    padding-bottom: 135px; }
   .slider img{
-    width: 100%;
-    margin-bottom: -5px; }
+    width: 100%; }
   .slider .slider_text{
-    position: relative;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.9); }
   .slider .slider_text h2{
     width: 100%; }
-  .slider .bullets{
-    display: none; }
   .slider .bullets ul{
     bottom: 150px; }
   .news_all .news{
@@ -2012,10 +1987,6 @@ button {
     min-height: 100px; }
   .news_all .news .news_text h3{
     height: auto; }
-  .pages ul .page{
-    margin-bottom: 10px; }
-  .pages ul .page_arrow{
-    width: 100%; }
   .search{
     display: none; }
   .sidebar_news{
