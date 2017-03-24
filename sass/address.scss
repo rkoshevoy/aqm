@@ -14,6 +14,8 @@
 	@media (min-width: 1600px) {
 		width: 24.5vw;
 		height: 24vw;
+		margin-top: 5vw;
+		padding: 2vw 1.5vw;
 		font-size: 1.1vw;
 	}
 	
@@ -27,19 +29,32 @@
 			padding-left: 4.5vw;
 			margin-bottom: 2.6vw;
 			height: 2.7vw;
+				background-size: 2.6vw 18.5vw;
 		}
 	}
 
 	.timetable {
 		background-position: 0 -85px;
+
+		@media (min-width: 1600px) {
+			background-position: 0 -5.2vw;
+		}
 	}
 
 	.email {
 		background-position: 0 -168px;
+
+		@media (min-width: 1600px) {
+			background-position: 0 -10.4vw;
+		}
 	}
 
 	.phone {
 		background-position: 0 -255px;
+
+		@media (min-width: 1600px) {
+			background-position: 0 -16vw;
+		}
 	}
 }
 

@@ -8,13 +8,14 @@
 		width: 100%;
 		min-width: 0;
 	}
-
+ 
 	h2 {
 		margin-bottom: 40px;
 		font-size: $fs30;
 		text-transform: uppercase;
 
 		@media (min-width: 1600px) {
+			margin-bottom: 2.5vw;
 			font-size: 1.85vw;
 		}
 	}
@@ -51,9 +52,14 @@
 				@media (max-width: 1000px) {
 					width: 100%;
 				}
+
+				@media (min-width: 1600px) {
+				margin-top: 1vw;
+				}
 			}
 
 			@media (min-width: 1600px) {
+				margin-bottom: 1vw;
 				padding: 1.5vw;
 				font-size: 0.9vw;
 			}
