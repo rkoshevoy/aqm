@@ -99,6 +99,10 @@
 					width: 2px;
 					background-color: #fff;
 
+					@media (min-width: 1600px) {
+						width: 0.1vw;
+					}
+
 					&::before {
 						content: 'до';
 						position: absolute;
@@ -111,6 +115,14 @@
 
 						@media (max-width: 1000px) {
 							display: none;
+						}
+
+						@media (min-width: 1600px) {
+							top: 1.6vw;
+							left: -3.7vw;
+							width: 3.7vw;
+							height: 2vw;
+							font-size: 1.2vw;
 						}
 					}
 
@@ -126,6 +138,13 @@
 						@media (max-width: 1000px) {
 							display: none;
 						}
+
+						@media (min-width: 1600px) {
+							top: 1.6vw;
+							width: 3.7vw;
+							height: 2vw;
+							font-size: 1.2vw;
+						}
 					}
 				}
 
@@ -140,6 +159,7 @@
 					width: 13%;
 					display: inline-block;
 					margin-right: 0.55vw;
+					cursor: pointer;
 
 					&:last-child {
 						margin-right: 0;

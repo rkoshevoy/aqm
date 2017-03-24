@@ -608,7 +608,8 @@ button {
       .gallery .screen_slider .slider .previews .slide_preview {
         width: 13%;
         display: inline-block;
-        margin-right: 0.55vw; }
+        margin-right: 0.55vw;
+        cursor: pointer; }
         .gallery .screen_slider .slider .previews .slide_preview:last-child {
           margin-right: 0; }
         .gallery .screen_slider .slider .previews .slide_preview img {
@@ -1694,6 +1695,19 @@ button {
     height: 2vw; }
   .gallery .screen_slider .slider .slide{
     margin-bottom: 1vw; }
+  .gallery .screen_slider .slider .slide .slide_separator{
+    width: 0.1vw; }
+  .gallery .screen_slider .slider .slide .slide_separator::before{
+    top: 1.6vw;
+    left: -3.7vw;
+    width: 3.7vw;
+    height: 2vw;
+    font-size: 1.2vw; }
+  .gallery .screen_slider .slider .slide .slide_separator::after{
+    top: 1.6vw;
+    width: 3.7vw;
+    height: 2vw;
+    font-size: 1.2vw; }
   .gallery .screen_slider .slide_description{
     height: 40vw;
     padding: 1.5vw;
