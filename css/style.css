@@ -991,8 +991,7 @@ button {
   padding-top: 90px;
   padding-bottom: 65px;
   background-color: #efb607;
-  text-align: center;
-  padding-bottom: 0; }
+  text-align: center; }
   .request .wrapper {
     max-width: 1120px;
     padding: 0 20px; }
@@ -1022,9 +1021,7 @@ button {
 
 .map {
   padding-top: 75px;
-  padding-bottom: 200px;
-  margin-bottom: -20px;
-  margin-bottom: -100px; }
+  padding-bottom: 350px; }
   .map h2 {
     margin-top: 10px;
     color: #fff;
@@ -1683,6 +1680,20 @@ button {
     font-size: 1vw; }
   .variants ul li a .variant span:nth-of-type(1){
     font-size: 1.5vw; }
+  .gallery{
+    padding-left: 3vw; }
+  .gallery .screen_slider .screen_slider_points li{
+    width: 0.3vw;
+    height: 0.3vw; }
+  .gallery .screen_slider .screen_slider_points li:after{
+    width: 0.05vw; }
+  .gallery .screen_slider .screen_slider_points li .active_screen{
+    top: -1vw;
+    left: -1.3vw;
+    width: 2.6vw;
+    height: 2vw; }
+  .gallery .screen_slider .slider .slide{
+    margin-bottom: 1vw; }
   .gallery .screen_slider .slide_description{
     height: 40vw;
     padding: 1.5vw;
@@ -1754,7 +1765,11 @@ button {
   .address .email{
     background-position: 0 -10.4vw; }
   .address .phone{
-    background-position: 0 -16vw; } }
+    background-position: 0 -16vw; }
+  .laying h1{
+    font-size: 2.5vw;
+    line-height: 3.2vw;
+    max-width: none; } }
       @media (max-width: 1000px){
   .figure_wrapper .figure10{
     width: 100%;
@@ -1899,7 +1914,8 @@ button {
     padding-left: 0;
     text-align: center; }
   .gallery .screen_slider .screen_slider_points{
-    display: none; }
+    display: none;
+    left: 1vw; }
   .gallery .screen_slider .slider{
     width: 95%;
     margin: 0 auto;
@@ -1972,8 +1988,9 @@ button {
     width: 100%; }
   .request form .button{
     width: 100%;
-    min-width: 0;
-    margin-bottom: 50px; }
+    min-width: 0; }
+  .map{
+    padding-bottom: 450px; }
   .map h2{
     width: 100%; }
   .bottom_menu ul{
@@ -2053,6 +2070,9 @@ button {
       @media (max-width: 700px){
   .variants ul li{
     width: 100%; } }
+      @media (max-width: 1100px){
+  .gallery .screen_slider .slider .previews .slide_preview{
+    width: 12.9%; } }
       @media (max-width: 750px){
   .about .help .about img{
     width: 100%;
