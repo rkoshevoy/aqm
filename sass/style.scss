@@ -20,9 +20,12 @@
 @import "contact.scss";
 @import "address.scss";
 
-/* about */
+/* services */
+@import "laying.scss";
 @import "importance.scss";
+@import "videos.scss";
 @import "request.scss";
+@import "map.scss";
 
 /* blog */
 @import "bottom_menu.scss";
@@ -37,7 +40,6 @@
 @import "google.scss";
 @import "facebook.scss";
 @import "full_news.scss";
-@import "full_news_bottom.scss";
 @import "share.scss";
 @import "recommend.scss";
 @import "search_bar.scss";

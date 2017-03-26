@@ -152,25 +152,37 @@ button {
   display: block;
   clear: both; }
 
-.wrapper {
+.index_wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+.about_wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.blog_wrapper {
   width: 100%;
   max-width: 1324px;
   padding: 0 20px;
   margin: 0 auto; }
 
-.wrapper_about {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.wrapper_main {
-  width: 100%;
-  margin: 0 auto; }
-
-.wrapper_wide {
+.contact_wraper {
   padding: 0 30px;
   margin: 0 auto; }
 
-.wrapper_services {
+.gallery_wrapper {
+  padding: 0 30px;
+  margin: 0 auto; }
+
+.reviews_wrapper {
+  padding: 0 30px;
+  margin: 0 auto; }
+
+.services_wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+.services_content_wrapper {
   max-width: 1248px;
   padding: 0 20px;
   margin: 0 auto; }
@@ -871,7 +883,7 @@ button {
   .address_services .phone {
     background-position: 0 -255px; }
 
-/* about */
+/* services */
 .laying {
   position: relative;
   z-index: -1;
@@ -993,9 +1005,6 @@ button {
   padding-bottom: 65px;
   background-color: #efb607;
   text-align: center; }
-  .request .wrapper {
-    max-width: 1120px;
-    padding: 0 20px; }
   .request h2 {
     margin-bottom: 50px;
     font-size: 30px;

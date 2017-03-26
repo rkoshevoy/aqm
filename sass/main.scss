@@ -216,29 +216,44 @@ button {
 	clear: both;
 }
 
-.wrapper {
+.index_wrapper {
 	width: 100%;
-	max-width: 1324px;
-	padding: 0 20px;
 	margin: 0 auto;
 }
 
-.wrapper_about {
+.about_wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-.wrapper_main {
+.blog_wrapper {
 	width: 100%;
+	max-width: 1324px;
+	padding: 0 20px;
 	margin: 0 auto;
-}
+} 
 
-.wrapper_wide {
+.contact_wraper {
 	padding: 0 30px;
 	margin: 0 auto;
 }
 
-.wrapper_services {
+.gallery_wrapper {
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.reviews_wrapper {
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.services_wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.services_content_wrapper {
 	max-width: 1248px;
 	padding: 0 20px;
 	margin: 0 auto;
@@ -266,7 +281,7 @@ button {
 	margin-left: 20px;
 
 	ul {
-			margin-bottom: 20px;
+		margin-bottom: 20px;
 
 		li {
 			position: relative;
