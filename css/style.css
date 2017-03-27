@@ -289,15 +289,75 @@ button {
         font-family: 'Didact Gothic';
         font-weight: bold;
         font-size: 24px; }
-      .header .header_right .header_phone .text {
+      .header .header_right .header_phone .phone_text {
         float: right;
-        font-size: 14px; }
-        .header .header_right .header_phone .text:hover {
+        font-size: 14px;
+        cursor: pointer;
+        border-bottom: 1px solid transparent; }
+        .header .header_right .header_phone .phone_text:hover {
           border-bottom: 1px dashed #000; }
   .header .header_right_black_menu nav ul li:hover a {
     border-bottom: 1px dashed #000; }
   .header .header_right_black_menu nav ul li a {
     color: #000; }
+
+.hide {
+  display: none; }
+
+.footer {
+  width: 100%;
+  height: 82px;
+  padding: 0 30px;
+  padding-bottom: 20px;
+  margin: 0 auto; }
+  .footer .social {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .footer .social .social_sprite {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border: 3px solid #7b7c7c;
+      border-radius: 50%;
+      background-image: url("../img/social_sprite.png"); }
+      .footer .social .social_sprite:hover {
+        border: 3px solid #fff; }
+    .footer .social .social_sprite_black {
+      border: 3px solid #000;
+      background-image: url("../img/social_sprite_black.png"); }
+      .footer .social .social_sprite_black:hover {
+        border: 3px solid #7b7c7c; }
+    .footer .social .fb {
+      background-position: 9px 5px; }
+    .footer .social .inst {
+      background-position: -33px 5px; }
+    .footer .social .tw {
+      background-position: -73px 5px; }
+    .footer .social .vk {
+      background-position: -112px 5px; }
+  .footer .made_by {
+    float: right;
+    width: 270px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 14px;
+    text-align: center; }
+    .footer .made_by span {
+      vertical-align: middle;
+      font-size: 13px;
+      color: #fff; }
+    .footer .made_by .manufacturer {
+      display: inline-block;
+      vertical-align: middle;
+      width: 120px;
+      height: 63px;
+      margin-left: 5px;
+      background-image: url("../img/crepla.png"); }
+  .footer .made_by_black span {
+    color: #000; }
+  .footer .made_by_black .manufacturer {
+    background-image: url("../img/crepla_black.png"); }
 
 .consult_modal {
   position: fixed;
@@ -392,64 +452,31 @@ button {
       transform: translatex(-50%);
       cursor: pointer;
       font-weight: bold; }
-
-.hide {
-  display: none; }
-
-.footer {
-  width: 100%;
-  height: 82px;
-  padding: 0 30px;
-  padding-bottom: 20px;
-  margin: 0 auto; }
-  .footer .social {
-    float: left;
-    margin-top: 30px;
-    margin-bottom: 20px; }
-    .footer .social .social_sprite {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-      border: 3px solid #7b7c7c;
-      border-radius: 50%;
-      background-image: url("../img/social_sprite.png"); }
-      .footer .social .social_sprite:hover {
-        border: 3px solid #fff; }
-    .footer .social .social_sprite_black {
-      border: 3px solid #000;
-      background-image: url("../img/social_sprite_black.png"); }
-      .footer .social .social_sprite_black:hover {
-        border: 3px solid #7b7c7c; }
-    .footer .social .fb {
-      background-position: 9px 5px; }
-    .footer .social .inst {
-      background-position: -33px 5px; }
-    .footer .social .tw {
-      background-position: -73px 5px; }
-    .footer .social .vk {
-      background-position: -112px 5px; }
-  .footer .made_by {
-    float: right;
-    width: 270px;
-    height: 60px;
-    margin: 0 auto;
-    margin-top: 14px;
-    text-align: center; }
-    .footer .made_by span {
-      vertical-align: middle;
-      font-size: 13px;
-      color: #fff; }
-    .footer .made_by .manufacturer {
-      display: inline-block;
-      vertical-align: middle;
-      width: 120px;
-      height: 63px;
-      margin-left: 5px;
-      background-image: url("../img/crepla.png"); }
-  .footer .made_by_black span {
-    color: #000; }
-  .footer .made_by_black .manufacturer {
-    background-image: url("../img/crepla_black.png"); }
+    .consult_modal .modal_wrapper .close_modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer; }
+      .consult_modal .modal_wrapper .close_modal::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 13px;
+        width: 1px;
+        height: 35px;
+        background-color: #000;
+        transform: rotate(-45deg); }
+      .consult_modal .modal_wrapper .close_modal::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 13px;
+        width: 1px;
+        height: 35px;
+        background-color: #000;
+        transform: rotate(45deg); }
 
 /* main page */
 .caption {
@@ -1625,7 +1652,7 @@ button {
     font-size: 1vw; }
   .header .header_right .header_phone .phone{
     font-size: 1.5vw; }
-  .header .header_right .header_phone .text{
+  .header .header_right .header_phone .phone_text{
     font-size: 0.85vw; }
   .footer{
     height: 6vw; }
@@ -1802,7 +1829,7 @@ button {
     transform: none; }
   .header .logo{
     display: none; }
-  .header .header_right .show_menu{
+  .header .header_right .menu_button{
     position: absolute;
     z-index: 10;
     left: 40px;
@@ -1810,12 +1837,12 @@ button {
     width: 40px;
     height: 40px;
     cursor: pointer; }
-  .header .header_right .show_menu .menu_line{
+  .header .header_right .menu_button .menu_line{
     width: 40px;
     height: 5px;
     margin-bottom: 12px;
     background-color: #fff; }
-  .header .header_right .show_menu .menu_line_black{
+  .header .header_right .menu_button .menu_line_black{
     background-color: #000; }
   .header .header_right .hide_menu{
     position: absolute;
